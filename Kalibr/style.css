@@ -1,0 +1,140 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fcfef3;
+}
+.hide {
+  display: none !important;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0f0f0f;
+}
+.header__menu {
+  position: relative;
+}
+.header__menu .menu__btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header__menu .menu__btn svg {
+  width: 25px;
+  height: 25px;
+}
+.header__menu .menu__list {
+  margin: 0;
+  padding: 10px 20px;
+  list-style-type: none;
+  border-radius: 4px;
+  background: #e2e2e2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: menu-showing .3s;
+}
+.header__menu .menu__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  text-decoration: none;
+}
+@keyframes menu-showing {
+  from {
+    transform: translateY(95%);
+  }
+}
+.wrapper{
+  display: flex;
+  height: 90%;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex: 0 1 75%;
+}
+.bg1{
+  flex: 0 1 25%;
+  background-image: url('./image/girl1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.bg2{
+  flex: 0 1 25%;
+  background-image: url('./image/girl2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 30px;
+}
+.info p {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.info__nickname{
+  color: #000;
+}
+.info__avatar{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  margin-bottom: 20px;
+}
+.info__image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portfolio{
+  width: 100%;
+}
+.portfolio__btn{
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.portfolio__list{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+.portfolio__paragraph{
+  text-align: center;
+  flex: 0 1 33%;
+}
+.portfolio__block{
+  width: 100%;
+  height: 300px;
+}
+.portfolio__image{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}  
+.portfolio__title{
+  margin: 10px 0px;
+}
